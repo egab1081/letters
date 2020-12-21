@@ -1,0 +1,160 @@
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+	html, body{
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center; 
+	}
+	h1 {
+		font-family: Playfair Display;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 28px;
+		/* identical to box height, or 140% */
+
+		letter-spacing: 1px;
+		text-transform: capitalize;
+		margin: 0;
+	}
+	h2 {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 16px;
+		/* identical to box height, or 133% */
+		text-transform: uppercase;
+		margin: 0;
+	}
+	h3 {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
+		margin: 0;
+	}
+	h4 {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		/* identical to box height, or 171% */
+		text-align: center;
+		margin: 0;
+	}
+	p {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		margin: 0;
+	}
+	.letter {
+		width: 768px;
+		height: 544px;
+		border: 2px solid black;
+		display: flex;
+		justify-content: center;
+	}
+	.letter-inner {
+		width: 600px;
+	}
+	.letter-logo {
+		display: flex;
+		flex-direction: row;
+	}
+	.letter-logo_img {
+		width: 29px;
+		height: 56px;
+		margin-top: 40px;
+	}
+	.letter-logo_name {
+		margin-top: 46px;
+		margin-left: 12px;
+	}
+	.letter-main {
+		margin-top: 40px;
+	}
+	.letter-main_firstText {
+		margin-top: 12px;
+	}
+	.letter-main a {
+		color: red;
+		text-decoration: none;
+	}
+	.letter-main_emailAndPass {
+		margin-top: 12px;
+	}
+	.letter-footer {
+		margin-top: 40px;
+		background: #F7FAFF;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 88px;
+		text-align: center;
+	}
+	.letter-footer_freePhone {
+		margin-top: 20px;
+		width: 187px;
+	}
+	.letter-footer_phone {
+		margin-top: 20px;
+		width: 187px;
+	}
+	.letter-footer_email {
+		margin-top: 20px;
+		width: 187px;
+	}
+</style>
+<body>
+	<div class="letter">
+		<div class="letter-inner">
+			<div class="letter-logo">
+				<img src="img/union.png" class="letter-logo_img" alt="">
+				<div class="letter-logo_name">
+					<h2>Дизайнерский дом</h2>
+					<h1>Татьяны тягиной</h1>
+				</div>
+			</div>
+			<div class="letter-main">
+				<h3>Здравствуйте, Никита!</h3>
+				<p class="letter-main_firstText">Спасибо за регистрацию в нашем магазине.</p>
+				<p>Теперь вам доступен кабинет покупателя, в котором вы сможете отслеживать статус всех Ваших заказов.</p>
+				<p>Кабинет доступен по адресу <a href="#">http://ttcollection.ru/profile</a>,</p>
+				<p>для входа используйте e-mail и пароль, введенные при регистрации:</p>
+				<div class="letter-main_emailAndPass">
+					<p>E-mail: <b>niknow@gmail.com</b></p>
+					<p>Пароль: <b>Nik88Now</b></p>
+				</div>
+			</div>
+			<div class="letter-footer">
+				<div class="letter-footer_freePhone">
+					<h4>8 (800) 301-66-86</h4>
+					<p>бесплатно по рф</p>
+				</div>
+				<div class="letter-footer_phone">
+					<h4>8 (495) 323-89-99</h4>
+					<p>пн-пт 9:00-17:00</p>
+				</div>
+				<div class="letter-footer_email">
+					<h4>info@ttcollection.ru </h4>
+					<p>e-mail </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
