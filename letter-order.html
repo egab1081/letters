@@ -1,0 +1,345 @@
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+	html, body{
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center; 
+	}
+	h1 {
+		margin: 0;
+		font: normal 20px Playfair Display;
+		letter-spacing: 1px;
+		text-transform: capitalize;
+	}
+	h2 {
+		margin: 0;
+		font: normal 12px Open Sans;
+		line-height: 16px;
+		text-transform: uppercase;
+	}
+	h3 {
+		margin: 0;
+		font: normal bold 20px Open Sans;
+	}
+	.letter {
+		display: flex;
+		justify-content: center;
+	}
+	.letter-inner {
+		width: 600px;
+	}
+	.letter-logo {
+		height: 56px;
+	}
+	.letter-logo_img {
+		display: inline-block;
+		height: 56px;
+		width: 29px;
+	}
+	.letter-logo_name {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 7px;
+		margin-left: 9px;
+	}
+	.letter-main__title {
+  		margin-top: 41px;
+	}
+	.letter-main__text {
+		margin: 12px 0 0 0;
+		font: normal 400 14px Open Sans;
+		line-height: 24px;
+	}
+	.letter-main__text2 {
+		margin: 0;
+		font: normal 400 14px Open Sans;
+		line-height: 24px;
+		color: #6F7378;
+	}
+	.letter-main__text3 {
+		margin: 0;
+		font: normal 600 14px Open Sans;
+		line-height: 24px;
+	}
+	.letter-main-order {
+		margin: 40px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 600px;
+		height: 332px;
+		padding: 24px;
+		border: 1px solid #BCC1C8;
+		box-sizing: border-box;
+	}
+	.letter-main-order-head {
+		display: flex;
+		justify-content: space-between;
+	}
+	.letter-main-order-head__date {
+		margin: 0;
+		font: normal 600 20px Open Sans;
+		line-height: 28px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	.letter-main-order-head__link {
+		margin: 0;
+		font: normal 14px Open Sans;
+		line-height: 24px;
+		text-decoration: none;
+		color: #A90220;
+	}
+	.letter-main-order-center {
+		display: flex;
+		flex-direction: row;
+	}
+	.letter-main-order-center-fields {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.letter-main-order-center-personalData {
+		margin-left: 35px;
+	}
+	.letter-main-product {
+		margin-top: 24px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.letter-main-product__img {
+		width: 168px;
+		height: 252px;
+	}
+	.letter-main-product-info {
+		margin-left: 32px;
+		display: flex;
+		flex-direction: column;
+	}
+	.letter-main-product-info__head {
+		margin: 0;
+		font: normal 600 17px Open Sans;
+		line-height: 28px;
+	}
+	.letter-main-product-info-body {
+		margin-top: 24px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.letter-main-product-info-body_properties {
+		display: flex;
+		flex-direction: row;
+	}
+	.letter-main-product-info-body_properties__field {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 120px;
+	}
+	.letter-main-product-info-body_properties__value {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 119px;
+		margin-left: 16px;
+	}
+	.letter-main-product-info-body-price__now {
+		margin: 0;
+		text-align: right;
+		font: normal 700 20px Open Sans;
+		line-height: 28px;
+	}
+	.letter-main-product-info-body-price__before {
+		margin: 4px 0 0 0;
+		text-align: right;
+		font: normal 400 17px Open Sans;
+		text-decoration-line: line-through;
+		line-height: 28px;
+		color: #999FA7;
+	}
+	.letter-main-total {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 40px;
+		padding: 20px;
+		background: #FCF4E5;
+	}
+	.letter-main-total-sum
+	.letter-main-total-sum__piece {
+		margin: 0;
+		font: normal 400 17px Open Sans;
+		line-height: 28px;
+		color: #6F7378;
+	}
+	.letter-main-total-sum__piece__bold {
+		margin-left: 8px;
+		font-weight: 600;
+		text-align: right;
+	}
+	.letter-main-total-sum-price
+	.letter-main-total-sum-price__top {
+		margin: 3px 0 0 0;
+		text-align: right;
+		font: normal 600 17px Open Sans;
+	}
+	.letter-main-total-sum-price__bottom {
+		margin: 3px 0 0 0;
+		text-align: right;
+		font: normal 700 20px Open Sans;
+	}
+	.letter-footer { 
+		margin-top: 40px;
+		text-align: center;
+	}
+	.letter-footer__text {
+		margin: 0 0 9px 0;
+		font: normal 400 14px Open Sans;
+		line-height: 24px;
+	}
+	.letter-footer__link {
+		margin: 0;
+		font: normal 400 17px Open Sans;
+		line-height: 28px;
+		color: black;
+	}
+</style>
+<body>
+	<div class="letter">
+		<div class="letter-inner">
+			<div class="letter-logo">
+				<img src="img/union.png" class="letter-logo_img" alt="">
+				<div class="letter-logo_name">
+					<h2>Дизайнерский дом</h2>
+					<h1>Татьяны тягиной</h1>
+				</div>
+			</div>
+			<div class="letter-main">
+				<h3 class="letter-main__title">Заказ № 123809-123232 принят</h3>
+				<p class="letter-main__text">Здравствуйте, Никита!<br>Ваш заказ подтверждён и уже собирается на складе<br>В день доставки мы отправим вам смс с контактными данными торгового представителя. Он позвонит вам за 20-40 минут до доставки</p>
+				<p class="letter-main__text2" style="margin: 12px 0 0 0;">День, время или адрес доставки можно изменить не позднее, чем за 1 день до ожидаемой даты получения</p>
+				<div class="letter-main-order">
+					<div class="letter-main-order-head">
+						<h4 class="letter-main-order-head__date">от 2 августа</h4>
+						<a href="#" class="letter-main-order-head__link">Перейти к заказу</a>
+					</div>
+					<div class="letter-main-order-center">
+						<div class="letter-main-order-center-fields">
+							<p class="letter-main__text2">Получатель:</p>
+							<p class="letter-main__text2">Доставка:</p>
+							<p class="letter-main__text2">Оплата:</p>
+						</div>
+						<div class="letter-main-order-center-personalData">
+							<p class="letter-main__text3">Никита Иванов<br>+7 999 000-00-00<br>12345678@gmail.com</p>
+							<p class="letter-main__text3">Курьерская доставка<br>121121, Москва, пр-кт Победы, 22, 252<br>3 августа с 16 до 20</p>
+							<p class="letter-main__text3">32 315 руб. Оплата наличными при получении</p>
+						</div>
+					</div>
+					<a href="#" class="letter-main-order-footer letter-main-order-head__link">Узнать как вернуть</a>
+				</div>
+				<div class="letter-main-product">
+					<img src="img/new-img-2.png" alt="" class="letter-main-product__img">
+					<div class="letter-main-product-info">
+						<h5 class="letter-main-product-info__head">Брюки на средней посадке зауженные с манжетами "Рубенс"</h5>
+						<div class="letter-main-product-info-body">
+							<div class="letter-main-product-info-body_properties">
+								<div class="letter-main-product-info-body_properties__field">
+									<p class="letter-main__text2">Артикул:</p>
+									<p class="letter-main__text2">Цвет:</p>
+									<p class="letter-main__text2">Размер:</p>
+									<p class="letter-main__text2">Количество:</p>
+								</div>
+								<div class="letter-main-product-info-body_properties__value">
+									<p class="letter-main__text3">123-423</p>
+									<p class="letter-main__text3">Красный</p>
+									<p class="letter-main__text3">42</p>
+									<p class="letter-main__text3">2</p>
+								</div>
+							</div>
+							<div class="letter-main-product-info-body-price">
+								<h6 class="letter-main-product-info-body-price__now">11 300 руб.</h6>
+								<h6 class="letter-main-product-info-body-price__before">14 300 руб.</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="letter-main-product">
+					<img src="img/new-img-2.png" alt="" class="letter-main-product__img">
+					<div class="letter-main-product-info">
+						<h5 class="letter-main-product-info__head">Брюки на средней посадке зауженные с манжетами "Рубенс"</h5>
+						<div class="letter-main-product-info-body">
+							<div class="letter-main-product-info-body_properties">
+								<div class="letter-main-product-info-body_properties__field">
+									<p class="letter-main__text2">Артикул:</p>
+									<p class="letter-main__text2">Цвет:</p>
+									<p class="letter-main__text2">Размер:</p>
+									<p class="letter-main__text2">Количество:</p>
+								</div>
+								<div class="letter-main-product-info-body_properties__value">
+									<p class="letter-main__text3">123-423</p>
+									<p class="letter-main__text3">Красный</p>
+									<p class="letter-main__text3">42</p>
+									<p class="letter-main__text3">2</p>
+								</div>
+							</div>
+							<div class="letter-main-product-info-body-price">
+								<h6 class="letter-main-product-info-body-price__now">11 300 руб.</h6>
+								<h6 class="letter-main-product-info-body-price__before">14 300 руб.</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="letter-main-product">
+					<img src="img/new-img-2.png" alt="" class="letter-main-product__img">
+					<div class="letter-main-product-info">
+						<h5 class="letter-main-product-info__head">Брюки на средней посадке зауженные с манжетами "Рубенс"</h5>
+						<div class="letter-main-product-info-body">
+							<div class="letter-main-product-info-body_properties">
+								<div class="letter-main-product-info-body_properties__field">
+									<p class="letter-main__text2">Артикул:</p>
+									<p class="letter-main__text2">Цвет:</p>
+									<p class="letter-main__text2">Размер:</p>
+									<p class="letter-main__text2">Количество:</p>
+								</div>
+								<div class="letter-main-product-info-body_properties__value">
+									<p class="letter-main__text3">123-423</p>
+									<p class="letter-main__text3">Красный</p>
+									<p class="letter-main__text3">42</p>
+									<p class="letter-main__text3">2</p>
+								</div>
+							</div>
+							<div class="letter-main-product-info-body-price">
+								<h6 class="letter-main-product-info-body-price__now">11 300 руб.</h6>
+								<h6 class="letter-main-product-info-body-price__before">14 300 руб.</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="letter-main-total">
+					<div class="letter-main-total-sum">
+						<p class="letter-main-total-sum__piece">Товары, 6 шт.<b class="letter-main-total-sum__piece__bold">12 000 руб.</b></p>
+						<p class="letter-main-total-sum__piece">Скидка<b class="letter-main-total-sum__piece__bold">–300 руб.</b></p>
+					</div>
+					<div class="letter-main-total-sum-price">
+						<h6 class="letter-main-total-sum-price__top">Итого:</h6>
+						<h5 class="letter-main-total-sum-price__bottom">33 900 руб.</h5>
+					</div>
+				</div>
+			<div class="letter-footer">
+				<p class="letter-footer__text">Если остались вопросы, то напишите нам и мы обязательно вам ответим</p>
+				<a href="#" class="letter-footer__link">Создать обращение</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
